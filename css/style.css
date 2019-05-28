@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  /* 62.5% * 16px = 10 px */ }
+
+body {
+  box-sizing: border-box; }
+
+.button {
+  background-color: #6eb21e;
+  padding: 1.7rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  cursor: pointer; }
+  .button__icon {
+    position: absolute;
+    top: 2.7rem;
+    left: 1.7rem; }
+    .button__icon img {
+      height: 1.3rem;
+      width: auto; }
+  .button__text {
+    font-size: 1.4rem;
+    font-weight: 200;
+    padding-left: 1.8rem; }
+    .button__text span {
+      font-size: 2rem; }
+
+.header {
+  height: 85vh;
+  background-image: url(../../images/bg01.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .header__title {
+    position: absolute;
+    top: 50vh;
+    left: 36rem; }
+    .header__title__logo--2 {
+      height: auto;
+      width: 25rem; }
+
+.navigation {
+  display: flex;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 3rem auto; }
+  .navigation__logo img {
+    height: 6rem; }
+  .navigation__link {
+    color: #000;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-decoration: none; }
+    .navigation__link__top {
+      display: block;
+      text-align: center;
+      width: 100%; }
+    .navigation__link__bottom {
+      display: block;
+      text-align: center;
+      width: 100%; }
+  .navigation__contact-button {
+    flex: 0 1 24rem;
+    align-self: center;
+    padding-right: 0; }
+
+.icon-bar {
+  float: right;
+  background-color: #CFDEBD;
+  width: 100%;
+  height: 6vh; }
+  .icon-bar:after {
+    content: " ";
+    /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both; }
+  .icon-bar__icon {
+    height: 80%;
+    margin-top: .7vh; }
+    .icon-bar__icon--home {
+      margin-left: 11%; }
+    .icon-bar__icon--insta {
+      margin-left: 67.5%; }
+    .icon-bar__icon--tw {
+      margin-left: 2rem; }
+    .icon-bar__icon--fb {
+      margin-left: 2rem; }
