@@ -43,23 +43,30 @@
     background-color: #CFDEBD;
     width: 100%;
     height: 6vh;
+    max-height: 4rem;
     @include clear-fix;
+
+    &__container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        width: 75%;
+        margin: 0 auto;
+    }
+
 
     &__icon {
             height: 80%;
-            margin-top: .7vh;
-            &--home {
-                margin-left: 11%;
+            img {
+                height: 100%;
             }
-            &--insta {
-                margin-left: 67.5%;
+            &:not(last-of-type) {
+                margin-right: 1.5rem;
             }
-            &--tw {
-                margin-left: 2rem
+            &:first-of-type {
+                margin-right: auto;
             }
-            &--fb {
-                margin-left: 2rem
-            }
+            
     }
 }
 

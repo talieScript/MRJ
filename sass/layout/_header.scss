@@ -9,16 +9,16 @@
         position: absolute;
         top: 50vh;
         left: 36rem;
-        &__logo {
-            //green flower logo
-            &--1 {
+    }
 
-            }
-            // mrj logo
-            &--2 {
-                height: auto;
-                width: 25rem;
-            }
+    &__logo {
+        //green flower logo
+        &--1 {
+
+        }
+        // mrj logo
+        &--2 {
+            width: 25rem;
         }
     }
 }

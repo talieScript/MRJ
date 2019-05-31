@@ -43,9 +43,8 @@ body {
     position: absolute;
     top: 50vh;
     left: 36rem; }
-    .header__title__logo--2 {
-      height: auto;
-      width: 25rem; }
+  .header__logo--2 {
+    width: 25rem; }
 
 .navigation {
   display: flex;
@@ -78,7 +77,8 @@ body {
   float: right;
   background-color: #CFDEBD;
   width: 100%;
-  height: 6vh; }
+  height: 6vh;
+  max-height: 4rem; }
   .icon-bar:after {
     content: " ";
     /* Older browser do not support empty content */
@@ -86,14 +86,17 @@ body {
     display: block;
     height: 0;
     clear: both; }
+  .icon-bar__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto; }
   .icon-bar__icon {
-    height: 80%;
-    margin-top: .7vh; }
-    .icon-bar__icon--home {
-      margin-left: 11%; }
-    .icon-bar__icon--insta {
-      margin-left: 67.5%; }
-    .icon-bar__icon--tw {
-      margin-left: 2rem; }
-    .icon-bar__icon--fb {
-      margin-left: 2rem; }
+    height: 80%; }
+    .icon-bar__icon img {
+      height: 100%; }
+    .icon-bar__icon:not(last-of-type) {
+      margin-right: 1.5rem; }
+    .icon-bar__icon:first-of-type {
+      margin-right: auto; }
